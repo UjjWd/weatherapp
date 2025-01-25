@@ -58,7 +58,7 @@ const searchbox=document.querySelector('.search input');
 const searchbtn=document.querySelector('.search button');
 
  async function checkweather(val){
-    const response=await fetch(`http://api.weatherapi.com/v1/current.json?key=bf203a88c3c343258b5130509251401&q=${val}&aqi=yes`);
+    const response=await fetch(`https://api.weatherapi.com/v1/current.json?key=bf203a88c3c343258b5130509251401&q=${val}&aqi=yes`);
     var data=await response.json();
     // console.log(data);
     document.querySelector(".city").innerHTML=data.location.name;
